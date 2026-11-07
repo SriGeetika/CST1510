@@ -1,0 +1,6 @@
+hostname,value,limit,percent,status
+host1,80,100,80.0,OK
+host2,95,100,95.0,WARNING
+host3,110,100,110.00000000000001,OVER LIMIT
+host4,70,100,70.0,OK
+host5,85,100,85.0,OK
