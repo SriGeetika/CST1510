@@ -33,15 +33,6 @@ def status_of(records):
     return "OK"
 
 # ====================================================================== INPUT
-# 2. Your raw, messy records - at least 5, deliberately varied in spacing
-#    and case. Match the shape to your lane:
-#
-#    AI / Data Science : "  Survey_2026 , rating=4 , age=23  "
-#    Cyber Security     : "SRC=10.0.0.5,ATTEMPTS=12,RESULT=FAILED"
-#    IT                  : "  Srv-01 , used=87 , total=100  "
-#
-#    Excellent: save these lines to a file and load them with open() /
-#    a for loop over the file, instead of writing them directly here.
 
 raw_records = []  
 with open(r"C:\Users\kgeet\OneDrive\Geetika\CST1510\Strings and Text Manipulation-20261102\Week 07 - Strings and Text Manipulation\Week 07 - Strings and Text Manipulation\LAB\records.txt","r") as f:
@@ -50,12 +41,7 @@ with open(r"C:\Users\kgeet\OneDrive\Geetika\CST1510\Strings and Text Manipulatio
             raw_records.append(line)
 
 # =============================================================== PROCESS + OUTPUT
-# 3. Parse and report on every record.
-#
-#    Threshold : parse each record, print the cleaned dict.
-#    Typical   : also call status_of(...) for each, print it alongside.
-#    Excellent : print a one-line summary at the end - how many records,
-#                how many flagged.
+
 total_records = 0 
 flagged_records = 0 
 for raw_record in raw_records:
